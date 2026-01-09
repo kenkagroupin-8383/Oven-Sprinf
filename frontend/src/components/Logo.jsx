@@ -3,7 +3,7 @@ import React from 'react';
 const Logo = ({ size = 48, className = "" }) => {
   return (
     <img 
-      src="https://customer-assets.emergentagent.com/job_fresh-bakes-294/artifacts/x6rb1mb3_image.png"
+      src="/logo.png"
       alt="Oven Spring Bakery Logo"
       width={size}
       height={size}
