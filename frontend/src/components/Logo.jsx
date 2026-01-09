@@ -8,24 +8,45 @@ const Logo = ({ size = 48, className = "" }) => {
       width={size}
       height={size}
       className={className}
+      aria-label="Oven Spring Bakery Logo"
     >
-      {/* Bread/Oven shape - rounded bottom like actual shop logo */}
+      {/* Flour Sack Shape - Two parts like the reference */}
+      {/* Top cinched/tied part */}
       <path 
-        d="M32 4 C14 4 6 16 6 30 C6 44 14 58 32 60 C50 58 58 44 58 30 C58 16 50 4 32 4" 
-        fill="#3d3d3d"
+        d="M22 8 Q26 4 32 4 Q38 4 42 8 Q44 12 42 14 L22 14 Q20 12 22 8" 
+        fill="#2d2d2d"
       />
-      {/* Wheat grain arrangement */}
+      {/* Main bag body */}
+      <path 
+        d="M18 14 L46 14 Q50 18 50 26 L50 48 Q50 56 42 58 L22 58 Q14 56 14 48 L14 26 Q14 18 18 14" 
+        fill="#2d2d2d"
+      />
+      
+      {/* Wheat Stalk - Angled from bottom-left to top-right */}
       <g fill="#f5f0e6">
-        {/* Center stem */}
-        <ellipse cx="32" cy="38" rx="2.5" ry="7"/>
-        {/* Left grains */}
-        <ellipse cx="26" cy="28" rx="4" ry="7" transform="rotate(-25 26 28)"/>
-        <ellipse cx="23" cy="40" rx="3" ry="5.5" transform="rotate(-30 23 40)"/>
-        {/* Right grains */}
-        <ellipse cx="38" cy="28" rx="4" ry="7" transform="rotate(25 38 28)"/>
-        <ellipse cx="41" cy="40" rx="3" ry="5.5" transform="rotate(30 41 40)"/>
+        {/* Main stem */}
+        <path 
+          d="M24 52 L38 22" 
+          stroke="#f5f0e6" 
+          strokeWidth="2" 
+          strokeLinecap="round" 
+          fill="none"
+        />
+        
+        {/* Wheat grains - left side */}
+        <ellipse cx="26" cy="46" rx="3" ry="5" transform="rotate(-35 26 46)"/>
+        <ellipse cx="29" cy="40" rx="3" ry="5" transform="rotate(-35 29 40)"/>
+        <ellipse cx="32" cy="34" rx="3" ry="5" transform="rotate(-35 32 34)"/>
+        <ellipse cx="35" cy="28" rx="2.5" ry="4" transform="rotate(-35 35 28)"/>
+        
+        {/* Wheat grains - right side */}
+        <ellipse cx="30" cy="44" rx="3" ry="5" transform="rotate(25 30 44)"/>
+        <ellipse cx="33" cy="38" rx="3" ry="5" transform="rotate(25 33 38)"/>
+        <ellipse cx="36" cy="32" rx="3" ry="5" transform="rotate(25 36 32)"/>
+        <ellipse cx="38" cy="26" rx="2.5" ry="4" transform="rotate(25 38 26)"/>
+        
         {/* Top grain */}
-        <ellipse cx="32" cy="18" rx="3" ry="6"/>
+        <ellipse cx="38" cy="23" rx="2" ry="3.5" transform="rotate(-10 38 23)"/>
       </g>
     </svg>
   );

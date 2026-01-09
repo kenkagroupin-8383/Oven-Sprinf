@@ -3,21 +3,147 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.svg" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Oven Spring Bakery | Fresh Artisan Sourdough & Croissants | Onehunga Auckland</title>
+    <meta name="title" content="Oven Spring Bakery | Fresh Artisan Sourdough & Croissants | Onehunga Auckland" />
+    <meta name="description" content="Oven Spring Bakery - Every Day Fresh. Auckland's premier artisan bakery in Onehunga serving fresh sourdough bread, butter croissants, pain au chocolat & pastries. Open 6AM daily. Call 022 599 8377 for pickup." />
+    <meta name="keywords" content="bakery Onehunga, Auckland bakery, sourdough Auckland, artisan bread NZ, croissants Auckland, pain au chocolat, fresh pastries, best bakery Auckland, Oven Spring, Trafalgar Street bakery, fresh bread daily" />
+    <meta name="author" content="Oven Spring Bakery" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+    
+    <!-- Theme Color -->
     <meta name="theme-color" content="#d97706" />
-    <meta name="description" content="Oven Spring Bakery - Fresh artisan breads and pastries baked daily in Onehunga, Auckland. Takeaway & Delivery available." />
-    <meta name="keywords" content="bakery, bread, pastries, Onehunga, Auckland, fresh baked, croissants, sourdough" />
-    <meta property="og:title" content="Oven Spring Bakery - Every Day Fresh" />
-    <meta property="og:description" content="Fresh artisan breads and pastries baked daily in Onehunga, Auckland." />
+    <meta name="msapplication-TileColor" content="#d97706" />
+    
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ovenspring.co.nz/" />
+    <meta property="og:title" content="Oven Spring Bakery | Fresh Artisan Sourdough & Croissants | Onehunga" />
+    <meta property="og:description" content="Auckland's premier artisan bakery serving fresh sourdough, croissants & pastries daily. 164 Trafalgar Street, Onehunga. Open 6AM. Call 022 599 8377." />
+    <meta property="og:image" content="%PUBLIC_URL%/og-image.png" />
+    <meta property="og:locale" content="en_NZ" />
+    <meta property="og:site_name" content="Oven Spring Bakery" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://ovenspring.co.nz/" />
+    <meta property="twitter:title" content="Oven Spring Bakery | Fresh Artisan Sourdough & Croissants" />
+    <meta property="twitter:description" content="Auckland's premier artisan bakery serving fresh sourdough, croissants & pastries daily. Onehunga. Open 6AM." />
+    <meta property="twitter:image" content="%PUBLIC_URL%/og-image.png" />
+    
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="NZ-AUK" />
+    <meta name="geo.placename" content="Onehunga, Auckland" />
+    <meta name="geo.position" content="-36.9158623;174.7840014" />
+    <meta name="ICBM" content="-36.9158623, 174.7840014" />
+    
+    <!-- Apple Mobile Web App -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="Oven Spring" />
-    <title>Oven Spring Bakery | Every Day Fresh | Onehunga, Auckland</title>
+    <meta name="mobile-web-app-capable" content="yes" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://ovenspring.co.nz/" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Bakery",
+      "name": "Oven Spring Bakery",
+      "alternateName": "Oven Spring",
+      "description": "Artisan bakery serving fresh sourdough bread, croissants, pastries and baked goods daily in Onehunga, Auckland.",
+      "url": "https://ovenspring.co.nz",
+      "telephone": "+64225998377",
+      "email": "hello@ovenspring.co.nz",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "164 Trafalgar Street",
+        "addressLocality": "Onehunga",
+        "addressRegion": "Auckland",
+        "postalCode": "1061",
+        "addressCountry": "NZ"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -36.9158623,
+        "longitude": 174.7840014
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "06:00",
+          "closes": "16:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "06:00",
+          "closes": "15:00"
+        }
+      ],
+      "priceRange": "$1-$10",
+      "servesCuisine": ["Bakery", "Pastries", "Artisan Bread"],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "110",
+        "bestRating": "5"
+      },
+      "sameAs": [
+        "https://www.instagram.com/oven.spring_/"
+      ],
+      "hasMenu": {
+        "@type": "Menu",
+        "hasMenuSection": [
+          {
+            "@type": "MenuSection",
+            "name": "Artisan Breads",
+            "hasMenuItem": [
+              {"@type": "MenuItem", "name": "Country Sourdough", "offers": {"@type": "Offer", "price": "8.00", "priceCurrency": "NZD"}},
+              {"@type": "MenuItem", "name": "Seeded Sourdough", "offers": {"@type": "Offer", "price": "9.00", "priceCurrency": "NZD"}}
+            ]
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Croissants",
+            "hasMenuItem": [
+              {"@type": "MenuItem", "name": "Butter Croissant", "offers": {"@type": "Offer", "price": "5.50", "priceCurrency": "NZD"}},
+              {"@type": "MenuItem", "name": "Almond Croissant", "offers": {"@type": "Offer", "price": "7.00", "priceCurrency": "NZD"}}
+            ]
+          }
+        ]
+      },
+      "image": [
+        "https://ovenspring.co.nz/og-image.png"
+      ],
+      "areaServed": {
+        "@type": "City",
+        "name": "Auckland"
+      }
+    }
+    </script>
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" />
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>
+      <h1>Oven Spring Bakery - Every Day Fresh</h1>
+      <p>Fresh artisan sourdough bread, croissants, and pastries baked daily in Onehunga, Auckland.</p>
+      <p>Address: 164 Trafalgar Street, Onehunga, Auckland 1061</p>
+      <p>Phone: 022 599 8377</p>
+      <p>Hours: Monday-Friday 6AM-4PM, Saturday 6AM-3PM, Sunday Closed</p>
+    </noscript>
     <div id="root"></div>
   </body>
 </html>
