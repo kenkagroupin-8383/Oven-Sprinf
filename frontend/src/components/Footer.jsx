@@ -1,13 +1,13 @@
 import React from 'react';
 import Logo from './Logo';
 import { bakeryInfo } from '../data/mock';
-import { Phone, MapPin, Clock } from 'lucide-react';
+import { Phone, MapPin, Clock, Instagram } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-charcoal-800 text-cream-100">
+    <footer className="bg-charcoal-800 text-cream-100" role="contentinfo">
       <div className="max-w-6xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
@@ -21,20 +21,31 @@ const Footer = () => {
                 <p className="text-xs tracking-[0.2em] text-cream-400">EVERY DAY FRESH</p>
               </div>
             </div>
-            <p className="text-cream-400 text-sm">
-              Artisan bakery serving Onehunga with fresh bread and pastries daily.
+            <p className="text-cream-400 text-sm mb-4">
+              Artisan bakery serving Onehunga with fresh sourdough bread, croissants and pastries daily.
             </p>
+            {/* Instagram Link */}
+            <a 
+              href={bakeryInfo.instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-cream-400 hover:text-amber-400 transition-colors"
+              aria-label="Follow Oven Spring on Instagram"
+            >
+              <Instagram size={20} />
+              <span>@oven.spring_</span>
+            </a>
           </div>
 
           {/* Quick Links */}
           <div className="text-center">
             <h4 className="font-semibold mb-4">Quick Contact</h4>
-            <div className="space-y-3">
+            <address className="not-italic space-y-3">
               <a 
                 href={`tel:${bakeryInfo.phone.replace(/\s/g, '')}`}
                 className="flex items-center justify-center gap-2 text-cream-400 hover:text-amber-400 transition-colors"
               >
-                <Phone size={16} />
+                <Phone size={16} aria-hidden="true" />
                 {bakeryInfo.phone}
               </a>
               <a 
@@ -43,10 +54,10 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 text-cream-400 hover:text-amber-400 transition-colors text-sm"
               >
-                <MapPin size={16} />
+                <MapPin size={16} aria-hidden="true" />
                 {bakeryInfo.address}
               </a>
-            </div>
+            </address>
           </div>
 
           {/* Hours Summary */}
@@ -54,7 +65,7 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Hours</h4>
             <div className="text-cream-400 text-sm space-y-1">
               <div className="flex items-center justify-center md:justify-end gap-2">
-                <Clock size={14} />
+                <Clock size={14} aria-hidden="true" />
                 <span>Mon - Fri: 6AM - 4PM</span>
               </div>
               <p>Saturday: 6AM - 3PM</p>
@@ -69,7 +80,7 @@ const Footer = () => {
             © {currentYear} Oven Spring Bakery. All rights reserved.
           </p>
           <p className="text-cream-600 text-xs mt-2">
-            164 Trafalgar Street, Onehunga, Auckland 1061
+            164 Trafalgar Street, Onehunga, Auckland 1061, New Zealand
           </p>
         </div>
       </div>
@@ -80,8 +91,9 @@ const Footer = () => {
           <a 
             href={`tel:${bakeryInfo.phone.replace(/\s/g, '')}`}
             className="flex-1 flex items-center justify-center gap-2 bg-amber-600 text-white py-3 rounded-xl font-semibold"
+            aria-label="Call to order"
           >
-            <Phone size={18} />
+            <Phone size={18} aria-hidden="true" />
             Call to Order
           </a>
           <a 
@@ -89,8 +101,9 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 bg-charcoal-700 text-white px-5 py-3 rounded-xl"
+            aria-label="Get directions"
           >
-            <MapPin size={18} />
+            <MapPin size={18} aria-hidden="true" />
           </a>
         </div>
       </div>
