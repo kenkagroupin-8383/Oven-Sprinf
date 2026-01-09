@@ -13,7 +13,9 @@ const Footer = () => {
           {/* Brand */}
           <div className="text-center md:text-left">
             <div className="flex items-center gap-3 justify-center md:justify-start mb-4">
-              <Logo size={40} withBackground={true} />
+              <div className="bg-cream-100 rounded-xl p-2">
+                <Logo size={40} />
+              </div>
               <div>
                 <h3 className="font-serif text-xl font-semibold">OVEN SPRING</h3>
                 <p className="text-xs tracking-[0.2em] text-cream-400">EVERY DAY FRESH</p>
