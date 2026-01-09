@@ -24,9 +24,9 @@ const Hero = () => {
       <div className="relative max-w-7xl mx-auto px-4 py-8 md:py-16">
         {/* Hero Content */}
         <div className="flex flex-col items-center text-center">
-          {/* Logo Large */}
+          {/* Logo with theme background */}
           <div className="mb-6 animate-fadeIn">
-            <Logo size={120} className="drop-shadow-lg" />
+            <Logo size={100} withBackground={true} className="shadow-lg" />
           </div>
           
           <h1 className="font-serif text-4xl md:text-6xl font-bold text-charcoal-800 mb-2 animate-fadeIn">
