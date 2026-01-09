@@ -29,7 +29,7 @@ function App() {
         {/* About Section with SEO */}
         <section id="about" className="py-16 bg-cream-50" aria-labelledby="about-heading">
           <div className="max-w-4xl mx-auto px-4 text-center">
-            <h2 id="about-heading\" className="font-serif text-3xl md:text-4xl font-bold text-charcoal-800 mb-6">
+            <h2 id="about-heading" className="font-serif text-3xl md:text-4xl font-bold text-charcoal-800 mb-6">
               About Oven Spring Bakery
             </h2>
             <p className="text-charcoal-600 leading-relaxed mb-6">
